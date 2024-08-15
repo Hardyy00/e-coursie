@@ -15,11 +15,11 @@ export default function SideBar() {
 
   return (
     <div
-      className={cn("h-full bg-[#131063a1]  relative flex flex-col gap-y-8")}
+      className={cn("h-full bg-[#131063a1] p-4 relative flex flex-col gap-y-8")}
     >
       <ToggleSidebar />
 
-      <div className=" flex flex-col gap-y-6">
+      <div>
         <NavLinks />
       </div>
     </div>

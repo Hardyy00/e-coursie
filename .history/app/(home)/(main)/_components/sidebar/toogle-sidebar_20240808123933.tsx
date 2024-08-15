@@ -20,7 +20,7 @@ export default function ToggleSidebar() {
   return (
     <div
       className={cn(
-        "p-4 flex items-center transition-all duration-150 ease-in ",
+        " flex items-center transition-all duration-150 ease-in ",
         !collapse && "w-[250px] justify-between",
         collapse && "w-[50px] justify-center"
       )}

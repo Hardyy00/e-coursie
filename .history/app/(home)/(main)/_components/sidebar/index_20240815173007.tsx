@@ -19,7 +19,7 @@ export default function SideBar() {
     >
       <ToggleSidebar />
 
-      <div className=" flex flex-col gap-y-6">
+      <div className="border border-white flex flex-col">
         <NavLinks />
       </div>
     </div>

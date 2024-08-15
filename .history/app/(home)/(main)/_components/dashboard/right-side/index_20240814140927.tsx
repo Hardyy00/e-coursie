@@ -19,7 +19,7 @@ const RightSide: React.FC<RightSideProps> = ({ user, isLoggedIn }) => {
   return (
     <div className={cn("flex-[0.3] bg-foreground px-4 py-2 space-y-2")}>
       {!isLoggedIn && (
-        <div className="w-full flex px-2 items-center justify-center space-x-4 mb-4">
+        <div className="w-full flex px-2 items-center justify-center space-x-4 mb-2">
           <h2 className="font-extrabold text-muted-foreground">
             Sign-in to continue
           </h2>
