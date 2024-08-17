@@ -39,6 +39,11 @@ export const getRecommendations = async () => {
           },
         },
       },
+      select: {
+        name: true,
+        description: true,
+        topics: true,
+      },
     },
 
     include: {

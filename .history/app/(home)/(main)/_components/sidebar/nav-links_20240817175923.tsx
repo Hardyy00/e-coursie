@@ -20,7 +20,9 @@ export const NavLinks: React.FC = () => {
   return (
     <>
       {links.map((item, idx) => (
-        <NavLink {...item} key={idx} />
+        <Hint key={idx} label={item.label} align="start">
+          <NavLink {...item} />
+        </Hint>
       ))}
     </>
   );

@@ -1,0 +1,10 @@
+"use client";
+
+import { match } from "assert";
+import { useMediaQuery } from "usehooks-ts";
+
+export const Sidebar = () => {
+  const matches = useMediaQuery("max-width:1024px");
+
+  if (match) return <div className="h-full bg-white ">Sidebar</div>;
+};

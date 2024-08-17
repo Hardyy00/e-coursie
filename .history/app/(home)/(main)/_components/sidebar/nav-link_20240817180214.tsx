@@ -18,9 +18,11 @@ export const NavLink: React.FC<NavLink> = ({ icon: Icon, label, path }) => {
   const currentPath = usePathname();
   const onPath = currentPath === path;
 
+  let content;
+
   if (collapse) {
-    return (
-      <Hint label={label} side="right">
+    content = (
+      <Hint>
         <div
           className={cn("flex transition-all", collapse && "justify-center")}
         >
