@@ -1,13 +1,12 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { CircleAlert } from "lucide-react";
 import Uploader from "./_components/upload";
-import { CldUploadWidget } from "next-cloudinary";
 import MuxPlayer from "@mux/mux-player-react";
 
 export default function publish() {
   return (
-    <div className="w-full h-full p-4 space-y-4 overflow-y-auto gap-y-8">
-      <h1 className="text-2xl font-extrabold tracking-wider">
+    <div className="w-full h-full p-4 space-y-4 overflow-y-auto">
+      <h1 className="text-2xl font-extrabold tracking-wider mb-8">
         Publish Your Own Course
       </h1>
 
@@ -21,6 +20,11 @@ export default function publish() {
       </Alert>
 
       <Uploader />
+
+      <MuxPlayer
+        streamType="on-demand"
+        playbackId="mEuT5UROTFEnIhCyfBEmtUBzImceeSKE8YEXrEW401WI"
+      />
     </div>
   );
 }

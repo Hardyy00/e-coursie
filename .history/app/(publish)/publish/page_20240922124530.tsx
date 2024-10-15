@@ -20,7 +20,7 @@ export default function publish() {
         </AlertDescription>
       </Alert>
 
-      <Uploader />
+      {/* <Uploader /> */}
     </div>
   );
 }

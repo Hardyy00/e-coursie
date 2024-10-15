@@ -19,8 +19,6 @@ export default function publish() {
           Your Course is not visible to public.
         </AlertDescription>
       </Alert>
-
-      <Uploader />
     </div>
   );
 }

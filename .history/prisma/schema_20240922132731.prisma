@@ -100,7 +100,6 @@ model Course{
   id String @id @default(cuid())
   name  String?
   description String?
-  playbackId String
   topics String[]
   thumbnail String?
   userId String

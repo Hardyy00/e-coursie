@@ -1,7 +1,6 @@
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { CircleAlert } from "lucide-react";
 import Uploader from "./_components/upload";
-import { CldUploadWidget } from "next-cloudinary";
 import MuxPlayer from "@mux/mux-player-react";
 
 export default function publish() {
@@ -21,6 +20,11 @@ export default function publish() {
       </Alert>
 
       <Uploader />
+
+      <MuxPlayer
+        streamType="on-demand"
+        playbackId="mEuT5UROTFEnIhCyfBEmtUBzImceeSKE8YEXrEW401WI"
+      />
     </div>
   );
 }

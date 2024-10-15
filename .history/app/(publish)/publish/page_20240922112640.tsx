@@ -20,7 +20,10 @@ export default function publish() {
         </AlertDescription>
       </Alert>
 
-      <Uploader />
+      <MuxPlayer
+        streamType="on-demand"
+        playbackId="mEuT5UROTFEnIhCyfBEmtUBzImceeSKE8YEXrEW401WI"
+      />
     </div>
   );
 }

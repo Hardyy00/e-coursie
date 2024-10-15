@@ -9,5 +9,9 @@ export const Sidebar = () => {
     return null;
   }
 
-  return <div className="h-full bg-white flex-[0.2] text-black ">Sidebar</div>;
+  return (
+    <div className="h-full bg-white flex-[0.2] text-muted-foreground ">
+      Sidebar
+    </div>
+  );
 };

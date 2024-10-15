@@ -20,7 +20,16 @@ export default function publish() {
         </AlertDescription>
       </Alert>
 
-      <Uploader />
+      <CldUploadWidget uploadPreset="<Your Upload Preset>">
+        {({ open }) => {
+          return <button onClick={() => open()}>Upload an Image</button>;
+        }}
+      </CldUploadWidget>
+
+      <MuxPlayer
+        streamType="on-demand"
+        playbackId="mEuT5UROTFEnIhCyfBEmtUBzImceeSKE8YEXrEW401WI"
+      />
     </div>
   );
 }
